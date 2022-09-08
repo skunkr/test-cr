@@ -4,5 +4,5 @@ RUN pip install flask
 COPY templates .
 ADD main.py .
 RUN chmod +x main.py
-EXPOSE 80
+EXPOSE 8080
 CMD [ "python", "./main.py" ]
