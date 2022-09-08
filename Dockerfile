@@ -1,7 +1,8 @@
 FROM python:3
 
 RUN pip install flask
-COPY templates .
+RUN mkdir templates
+ADD templates/index.html templates/index.html
 ADD main.py .
 RUN chmod +x main.py
 EXPOSE 8080
