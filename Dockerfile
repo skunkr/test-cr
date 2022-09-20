@@ -6,5 +6,5 @@ RUN pip install flask
 ADD ./templates /templates
 ADD main.py .
 RUN chmod +x main.py
-EXPOSE 80
+
 CMD [ "python", "./main.py" ]
