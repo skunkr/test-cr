@@ -25,4 +25,4 @@ def mainf():
 	return render_template("index.html", textres = textres, baseres = baseres)
 
 
-app.run(host="0.0.0.0", port=8080, debug=True)
+app.run(host="0.0.0.0", port=80, debug=True)
